@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HRManagement" Class="HR_ManagementDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-ANP8JUS\SQLEXPRESS;Initial Catalog=HRManagement;Integrated Security=True;Pooling=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="constr" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.DocumentUpload" Member="DocumentUploads">
+    <Type Name="DocumentUpload">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lastname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dob" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhotoName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PhotoType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="gender" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="x10Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X10Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X10" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="x12Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X12Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="X12" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="GraName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GraType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="graduation" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DeeName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DeeType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Degree" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PostName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PostType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Postgraduation" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="AadharName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AadharType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aadharcard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PanName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PanType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="pancard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BankName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BankType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Bankpass" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Function Name="dbo.DocumentUpload_Insert" Method="DocumentUpload_Insert">
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lastname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dob" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhotoName" Parameter="photoName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PhotoType" Parameter="photoType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="photo" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="gender" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="email" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="x10Name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="x10Type" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="X10" Parameter="x10" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="x12Name" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="x12Type" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="X12" Parameter="x12" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="GraName" Parameter="graName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="GraType" Parameter="graType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="graduation" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="DeeName" Parameter="deeName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="DeeType" Parameter="deeType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="degree" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="PostName" Parameter="postName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PostType" Parameter="postType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="postgraduation" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="AadharName" Parameter="aadharName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="AadharType" Parameter="aadharType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="aadharcard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="PanName" Parameter="panName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="PanType" Parameter="panType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="pancard" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="BankName" Parameter="bankName" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="BankType" Parameter="bankType" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="bankpass" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" />
+    <Parameter Name="Count" Parameter="count" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
