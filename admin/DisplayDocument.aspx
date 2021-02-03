@@ -20,6 +20,11 @@
                     <h4 class="alert-heading">Employee Documents Details</h4>
                     
         </div>
+         <div class="alert alert-dismissible alert-warning auto-style1" >
+               
+                    <h4 class="alert-heading">Employee Documents Details</h4>
+                    
+        </div>
         <div >
             <div style="overflow-x:auto;width:1365px" class="auto-style1" >
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CssClass="table table-striped table-bordered table-hover table-responsive" DataKeyNames="Id" DataSourceID="SqlDataSource1" AllowPaging="True" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
